@@ -16,7 +16,7 @@ https://pointlessprogramming.wordpress.com/2011/02/13/python-cgi-tutorial-1/
 
 
 from http.server import BaseHTTPRequestHandler, HTTPServer, CGIHTTPRequestHandler
- 
+
 Server = HTTPServer
 handler = CGIHTTPRequestHandler
 port = 8080
@@ -29,4 +29,7 @@ print("Server listening on http://{}:{}".format(
     httpd.server_name,
     httpd.server_port
 ))
+
+
+
 httpd.serve_forever()
